@@ -1,0 +1,137 @@
+/* General Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+    background-color: #f8f9fa;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Hero Section */
+.hero-section {
+    background: linear-gradient(135deg, #0d6efd 0%, #0b5ed7 100%);
+    border-radius: 0 0 20px 20px;
+}
+
+/* Product Cards */
+.product-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.product-card .card-img-top {
+    height: 200px;
+    object-fit: contain;
+    padding: 20px;
+    background-color: #f8f9fa;
+}
+
+.product-card .card-body {
+    padding: 1.25rem;
+}
+
+/* Category Cards */
+.category-card {
+    transition: transform 0.3s ease;
+}
+
+.category-card:hover {
+    transform: translateY(-5px);
+}
+
+.category-card .card-img-top {
+    height: 180px;
+    object-fit: cover;
+}
+
+/* Rating Stars */
+.text-warning {
+    color: #ffc107 !important;
+}
+
+/* Badges */
+.badge {
+    font-weight: 500;
+    padding: 5px 10px;
+}
+
+/* Quantity Selector */
+.input-group {
+    max-width: 120px;
+}
+
+/* Product Tabs */
+.nav-tabs .nav-link {
+    border: none;
+    color: #6c757d;
+    font-weight: 500;
+    padding: 12px 20px;
+}
+
+.nav-tabs .nav-link.active {
+    color: #0d6efd;
+    background-color: transparent;
+    border-bottom: 3px solid #0d6efd;
+}
+
+/* Review Stars */
+.rating-stars {
+    cursor: pointer;
+}
+
+.rating-stars .bi-star-fill {
+    color: #dee2e6;
+}
+
+.rating-stars .bi-star-fill.active,
+.rating-stars .bi-star-fill:hover {
+    color: #ffc107;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .hero-section .col-lg-6:last-child {
+        display: none;
+    }
+
+    .product-card .card-img-top {
+        height: 150px;
+    }
+}
+
+/* Custom Colors */
+.bg-primary {
+    background-color: #0d6efd !important;
+}
+
+.text-primary {
+    color: #0d6efd !important;
+}
+
+.btn-primary {
+    background-color: #0d6efd;
+    border-color: #0d6efd;
+}
+
+.btn-primary:hover {
+    background-color: #0b5ed7;
+    border-color: #0a58ca;
+}
+
+/* Animation for cart count */
+@keyframes bounce {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.2); }
+}
+
+.cart-count {
+    animation: bounce 0.5s;
+}

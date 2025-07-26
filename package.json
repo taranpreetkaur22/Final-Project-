@@ -1,0 +1,16 @@
+{
+  "name": "taran",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass scss/bootstrap.scss assets/css/bootstrap.css && sass scss/style.scss assets/css/style.css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^5.3.7",
+    "sass": "^1.89.2"
+  }
+}
